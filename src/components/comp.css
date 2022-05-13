@@ -1,39 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@900&display=swap');
-/* .bg{
-  opacity: 0.025;
-  position: fixed;
-  size: cover;
-  left: 0;
-  top: 0;
-  width: 100%;
-
+.App{
+  background-color:#F6FCFF;
 }
-
-
-div {
-  width: 200px;
-  height: 200px;
-  display: block;
-  position: relative;
-}
-
-div::after {
-  content: "";
-  background: url(image.jpg);
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+.App::before{
+  content:"";
+  background-image: url("./../../public/images/watermark.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
-  z-index: -1;   
-} */
-
+  top:0;
+  left:0;
+  z-index: -1;
+  opacity: 0.6;
+}
+.navbar::before{
+  content: "";
+  background-image: url("./../../public/images/watermark.jpg");
+}
 .navbar{
   font-family: 'Roboto', sans-serif !important;
   /* padding:30px 100px 0 100px ; */
   padding:3% 8% 0 8% ;
   background-color: #F6FCFF !important;
+  
 }
 .button{
   padding: 0.75% 4%;
@@ -246,8 +235,6 @@ div::after {
 .glance_img{
   position: relative;
   padding: 2%;
-  /* background-image: url("./../../public/images/Rectangle 65.png") no-repeat;
-  background-size: 534px 1200px; */
 }
 .top{
   position: absolute;

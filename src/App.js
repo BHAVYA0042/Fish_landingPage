@@ -28,7 +28,6 @@ function App() {
   },[])
   return (
     <div className="App">
-      {/* <img class="bg" src="images\watermark.jpg" alt="" /> */}
       <Bar/>
       <Fish/>
       {list.length > 0 && <Category data={list}/>}
